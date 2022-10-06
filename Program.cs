@@ -50,7 +50,7 @@ CountEven(array);
 [3, 7, 23, 12] -> 19
 [-4, -6, 89, 6] -> 0*/
 
-int[] array = new int[8];
+/*int[] array = new int[8];
 
 void Random(int[] element)
 {
@@ -90,7 +90,41 @@ Random(array);
 Print(array);
 Console.WriteLine("");
 Sum(array);
-
+*/
 
 /*Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 [3 7 22 2 78] -> 76*/
+
+
+
+float[] array = new float[8];
+
+Random(array);
+Print(array);
+float min = array.Min();
+float max = array.Max();
+
+float odd = max - min;
+Console.Write("Разница между " + max + " и " + min + ": " + odd);
+
+void Random(float[] element)
+{
+    int length = element.Length;
+    int index = 0;
+    while (index < length)
+    {
+        element[index] = new Random().Next(1,99);
+        index++;
+    }
+}
+
+void Print(float[] el)
+{
+    int count = el.Length;
+    int pos = 0;
+    while (pos<count)
+    {
+        Console.Write(el[pos] + ", ");
+        pos++;
+    }
+}
