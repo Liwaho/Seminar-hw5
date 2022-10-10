@@ -97,28 +97,28 @@ Sum(array);
 
 
 
-float[] array = new float[8];
+/*double[,] array = new double[8,10];
 
 Random(array);
 Print(array);
-float min = array.Min();
-float max = array.Max();
+double min = array.Min();
+double max = array.Max();
 
-float odd = max - min;
+double odd = max - min;
 Console.Write("Разница между " + max + " и " + min + ": " + odd);
 
-void Random(float[] element)
+void Random(double[,] element)
 {
     int length = element.Length;
     int index = 0;
     while (index < length)
     {
-        element[index] = new Random().Next(1,99);
+        element[index] = new Random().Next(0,99);
         index++;
     }
 }
 
-void Print(float[] el)
+void Print(double[,] el)
 {
     int count = el.Length;
     int pos = 0;
@@ -127,4 +127,4 @@ void Print(float[] el)
         Console.Write(el[pos] + ", ");
         pos++;
     }
-}
+}*/
